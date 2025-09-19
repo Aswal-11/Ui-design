@@ -1,0 +1,11 @@
+.bg-div {
+    background-image: url('/image/home_page_img.png');
+    background-size: cover;   /* makes it fit */
+    background-position: center; /* centers the image */
+    width: 100%;
+    height: 300px;
+  }
+
+
+
+  
