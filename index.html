@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/index.css" />
     <title>Document</title>
   </head>
@@ -12,18 +16,27 @@
       <div class="container mx-auto flex justify-between items-center">
         <!-- Logo Section -->
         <div class="flex">
-          <img src="/image/image.png" alt="" class="w-24 h-7" />
+          <img src="/image/image.png" alt="" class="w-34 h-10" />
         </div>
 
         <!-- Desktop Menu Links -->
         <div class="hidden md:flex space-x-6 text-black">
           <a href="/index.php" class="font-semibold hover:text-white">Home</a>
-          <a href="/about.php" class="font-semibold hover:text-white">About</a>
-          <a href="/course.php" class="font-semibold hover:text-white"
-            >Courses</a
+          <a href="/about.php" class="font-semibold hover:text-white"
+            >Company</a
+          >
+          <a href="/course.php" class="font-semibold hover:text-white">Team</a>
+          <a href="/contact.php" class="font-semibold hover:text-white"
+            >Case Studies</a
           >
           <a href="/contact.php" class="font-semibold hover:text-white"
-            >Contact Us</a
+            >Services</a
+          >
+          <a href="/contact.php" class="font-semibold hover:text-white"
+            >Blogs</a
+          >
+          <a href="/contact.php" class="font-semibold hover:text-white"
+            >Career</a
           >
         </div>
 
@@ -84,7 +97,8 @@
         <a
           href="/index.php"
           class="block text-gray-900 font-semibold hover:text-white"
-          >Home</a>
+          >Home</a
+        >
         <a
           href="/about.php"
           class="block text-gray-900 font-semibold hover:text-white"
@@ -124,41 +138,436 @@
       ></div>
     </nav>
 
-    <div class="w-full relative ">
-      <!-- Background Image -->
-      <img
-        src="/image/home_page_img.png"
-        class="absolute inset-0 object-cover z-10 rounded-3xl px-10"
-      />
+    <!-- Home page card -->
 
-      <!-- Foreground Image -->
-      <img src="/image/dots_img.png" class="absolute z-20 rounded-3xl px-10" />
+    <div class="flex justify-center py-4 px-5 lg:px-20">
+      <div class="bg-div rounded-3xl flex justify-center items-center">
+        <div
+          class="bg-dot-div flex flex-col justify-center items-center rounded-3xl"
+        >
+          <div
+            class="flex flex-col justify-center items-center text-center px-4 pt-10 md:pt-18"
+          >
+            <!-- First text with fade-in and slide-up animation -->
+            <p
+              class="text-lg md:text-2xl lg:text-6xl font-semibold text-white opacity-0 animate-fade-in-up animation-delay-100"
+            >
+              Unleash Next-Level Growth
+            </p>
 
-      <!-- Text Layer -->
-      <div
-        class="relative z-30 flex flex-col items-center justify-center text-center "
-      >
-        <p class="text-lg md:text-6xl font-semibold text-white pt-10">
-          Unleash Next-Level Growth
-        </p>
-        <p class="text-2xl md:text-7xl font-semibold text-white mt-4">
-          Effortless, Insightful, Yours.
-        </p>
-        <p class="mt-16 font-semibold text-white">
-          Reach your goals with tools that accelerate progress
-        </p>
+            <!-- Second text with fade-in and slide-up animation with longer delay -->
+            <p
+              class="text-xl md:text-4xl lg:text-7xl font-semibold text-white md:pt-4 opacity-0 animate-fade-in-up animation-delay-300"
+            >
+              Effortless, Insightful, Yours.
+            </p>
 
-        <div class="flex px-10">
-          <img src="image/left_wing.png" class="w-3/7" alt="" />
-          <div class="flex justify-center items-center w-1/7 ">
-            <p class="w-full py-1 text-black text-xs md:text-xl rounded-3xl bg-white">
-              Lets Talk
+            <!-- Subtitle with fade-in animation with even longer delay -->
+            <p
+              class="text-xs md:text-xl text-white pt-2 md:pt-5 opacity-90 opacity-0 animate-fade-in animation-delay-500"
+            >
+              Reach your goals with tools that accelerate progress
             </p>
           </div>
-          <img src="image/right_wing.png" class="w-3/7" alt="" />
+
+          <div class="relative">
+            <div>
+              <div class="flex items-center justify-center">
+                <div class="text-white">
+                  <img src="image/left_wing.png" class="h-1/2" alt="" />
+                </div>
+                <div class="text-whitel">
+                  <img src="image/right_wing.png" class="h-1/2" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="your-div absolute inset-0 flex items-center justify-center"
+            >
+              <!-- Button with pulse animation on hover -->
+              <button
+                class="z-20 w-ful md:px-8 px-4 lg:px-16 py-0.5 md:py-2 bg-white rounded-3xl text-xs md:text-lg font-semibold hover:animate-pulse"
+              >
+                Let's Talk
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <div
+      class="flex flex-col pb-10 md:pt-5 justify-center items-center max-md:px-2"
+    >
+      <p class="font-bold text-center text-md md:text-xl text-gray-600">
+        Trusted By More Than
+        <span class="text-blue-600">+10,000</span>
+        Clients
+      </p>
+      <div
+        class="flex flex-wrap gap-4 md:gap-10 justify-center items-center lg:px-20"
+      >
+        <img
+          src="image/company_logos/network.png"
+          class="w-24 h-10 md:w-40 md:h-16"
+          alt=""
+        />
+        <img
+          src="image/company_logos/penta.png"
+          class="w-24 h-10 md:w-40 md:h-16"
+          alt=""
+        />
+        <img
+          src="image/company_logos/product.png"
+          class="w-24 h-10 md:w-40 md:h-16"
+          alt=""
+        />
+        <img
+          src="image/company_logos/sitemark.png"
+          class="w-24 h-10 md:w-40 md:h-16"
+          alt=""
+        />
+        <img
+          src="image/company_logos/vision.png"
+          class="w-24 h-10 md:w-40 md:h-16"
+          alt=""
+        />
+        <img
+          src="image/company_logos/waveless.png"
+          class="w-24 h-10 md:w-40 md:h-16"
+          alt=""
+        />
+        <img
+          src="image/company_logos/network.png"
+          class="w-24 h-10 md:w-40 md:h-16"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="px-4 lg:px-20">
+      <section
+        class="lg:px-10 bg-blue-900/30 rounded-3xl shadow-2xl overflow-hidden"
+      >
+        <div class="container mx-auto px-4 md:px-8 py-12 md:py-16">
+          <div class="flex flex-col xl:flex-row items-center gap-8 md:gap-12">
+            <!-- Left Side (Image with Floating Cards) -->
+            <div class="w-full xl:w-1/2 relative">
+              <!-- Main Image -->
+              <div class="relative z-10 rounded-2xl overflow-hidden shadow-xl">
+                <img
+                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                  alt="Team Collaboration"
+                  class="w-full h-auto object-cover"
+                />
+              </div>
+
+              <!-- Floating Cards -->
+              <div
+                class="absolute -top-4 -left-4 z-20 floating-card max-sm:px-2"
+              >
+                <div
+                  class="bg-white rounded-xl p-1 md:p-4 shadow-lg flex items-center gap-3 w-48"
+                >
+                  <div class="bg-green-100 p-3 rounded-full">
+                    <i class="fas fa-trophy text-green-600 text-xl"></i>
+                  </div>
+                  <div class="text-xs md:text-sm">
+                    <p class="font-bold text-gray-800">Award Winner</p>
+                    <p class="text-xs md:text-sm text-gray-600">
+                      2023 Best Company
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="absolute -bottom-4 -right-4 z-20 floating-card max-sm:px-2"
+              >
+                <div
+                  class="bg-white rounded-xl p-1 md:p-4 shadow-lg flex items-center gap-3 w-48"
+                >
+                  <div class="bg-blue-100 p-3 rounded-full">
+                    <i class="fas fa-users text-blue-600 text-xl"></i>
+                  </div>
+                  <div class="text-xs md:text-sm">
+                    <p class="font-bold text-gray-800">250+ Members</p>
+                    <p class="text-xs md:text-sm text-gray-600">Global Team</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side (Content) -->
+            <div class="w-full xl:w-1/2">
+              <div
+                class="bg-white/90 backdrop-blur-md rounded-3xl shadow-lg p-6 md:p-8"
+              >
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                  About Our Company
+                </h2>
+                <p
+                  class="text-gray-700 text-base md:text-lg leading-relaxed mb-6"
+                >
+                  We are a forward-thinking team dedicated to building modern,
+                  scalable, and impactful solutions. Our mission is to connect
+                  technology, creativity, and people to drive growth and
+                  innovation.
+                </p>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-2 gap-4 mb-6">
+                  <div class="stats-card rounded-xl p-4 text-center">
+                    <p class="text-2xl md:text-3xl font-bold text-blue-600">
+                      10+
+                    </p>
+                    <p class="text-sm text-gray-600">Years Experience</p>
+                  </div>
+                  <div class="stats-card rounded-xl p-4 text-center">
+                    <p class="text-2xl md:text-3xl font-bold text-blue-600">
+                      500+
+                    </p>
+                    <p class="text-sm text-gray-600">Projects Completed</p>
+                  </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                  <button
+                    class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-blue-700 transition flex items-center justify-center gap-2"
+                  >
+                    <i class="fas fa-book-open"></i> Learn More
+                  </button>
+                  <button
+                    class="border border-gray-300 text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-50 transition flex items-center justify-center gap-2"
+                  >
+                    <i class="fas fa-envelope"></i> Contact Us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="w-full mx-auto px-4 sm:px-6 lg:px-20 pt-20">
+      <!-- Section Header -->
+      <div class="text-center mb-16 opacity-0" id="section-header">
+        <h2
+          class="text-base font-semibold text-indigo-600 tracking-wide uppercase"
+        >
+          Our Work
+        </h2>
+        <p
+          class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight"
+        >
+          Case Studies
+        </p>
+        <p class="max-w-3xl mt-5 mx-auto text-xl text-gray-500">
+          Explore our successful projects and see how we've helped businesses
+          achieve their goals.
+        </p>
+      </div>
+
+      <!-- Case Studies Grid -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        id="case-studies-container"
+      >
+        <!-- Case studies will be dynamically inserted here -->
+      </div>
+    </div>
+
+    <section class="w-full md:px-20 px-5 py-12 md:py-20">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          In-Depth Services
+        </h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">HOW WE CAN HELP</p>
+        <div class="w-24 h-1 bg-blue-500 mx-auto mt-6 rounded-full"></div>
+      </div>
+
+      <!-- Services Grid - Will be populated by JavaScript -->
+      <div
+        id="services-container"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
+        <!-- Content will be dynamically generated -->
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-gradient w-full py-12 px-4 md:px-8">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Company Info -->
+          <div class="flex flex-col">
+            <h3 class="text-2xl font-bold mb-6 flex items-center">
+              <span
+                class="bg-white text-purple-700 w-10 h-10 rounded-full flex items-center justify-center mr-3"
+              >
+                <i class="fas fa-rocket"></i>
+              </span>
+              Ecstatic
+            </h3>
+            <p class="text-white/80 mb-6 leading-relaxed">
+              We create digital experiences that inspire and delight. Our
+              mission is to help businesses grow through innovative solutions.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="social-icon w-10 h-10 rounded-full bg-white/10 flex items-center justify-center"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="social-icon w-10 h-10 rounded-full bg-white/10 flex items-center justify-center"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="social-icon w-10 h-10 rounded-full bg-white/10 flex items-center justify-center"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="social-icon w-10 h-10 rounded-full bg-white/10 flex items-center justify-center"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="flex flex-col">
+            <h3 class="text-xl font-semibold mb-6">Quick Links</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="footer-link flex items-center"
+                  ><i class="fas fa-chevron-right text-xs mr-2"></i> About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link flex items-center"
+                  ><i class="fas fa-chevron-right text-xs mr-2"></i> Services</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link flex items-center"
+                  ><i class="fas fa-chevron-right text-xs mr-2"></i>
+                  Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link flex items-center"
+                  ><i class="fas fa-chevron-right text-xs mr-2"></i>
+                  Testimonials</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link flex items-center"
+                  ><i class="fas fa-chevron-right text-xs mr-2"></i> Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="flex flex-col">
+            <h3 class="text-xl font-semibold mb-6">Our Services</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="footer-link flex items-center"
+                  ><i class="fas fa-chevron-right text-xs mr-2"></i> Web
+                  Development</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link flex items-center"
+                  ><i class="fas fa-chevron-right text-xs mr-2"></i> Mobile
+                  Apps</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link flex items-center"
+                  ><i class="fas fa-chevron-right text-xs mr-2"></i> UI/UX
+                  Design</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link flex items-center"
+                  ><i class="fas fa-chevron-right text-xs mr-2"></i> Digital
+                  Marketing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link flex items-center"
+                  ><i class="fas fa-chevron-right text-xs mr-2"></i> Cloud
+                  Solutions</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="flex flex-col">
+            <h3 class="text-xl font-semibold mb-6">Newsletter</h3>
+            <p class="text-white/80 mb-4">
+              Subscribe to our newsletter for updates
+            </p>
+            <form class="flex flex-col space-y-4">
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="newsletter-input bg-white/10 border border-white/20 rounded-lg py-3 px-4 focus:outline-none focus:border-white/40"
+              />
+              <button
+                type="submit"
+                class="bg-white text-purple-700 font-semibold py-3 rounded-lg transition-all hover:bg-gray-100 hover:shadow-lg"
+              >
+                Subscribe Now
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="footer-divider my-8"></div>
+
+        <!-- Bottom Footer -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
+        >
+          <p class="text-white/70 text-sm">
+            © 2023 Ecstatic. All rights reserved.
+          </p>
+          <div class="flex space-x-6">
+            <a
+              href="#"
+              class="text-white/70 hover:text-white text-sm footer-link"
+              >Privacy Policy</a
+            >
+            <a
+              href="#"
+              class="text-white/70 hover:text-white text-sm footer-link"
+              >Terms of Service</a
+            >
+            <a
+              href="#"
+              class="text-white/70 hover:text-white text-sm footer-link"
+              >Cookie Policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="/js/index.js"></script>
   </body>

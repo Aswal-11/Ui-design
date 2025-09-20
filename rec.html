@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecstatic Footer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #1a202c 0%, #2d3748 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .footer-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .footer-link {
+            transition: all 0.3s ease;
+        }
+        
+        .footer-link:hover {
+            color: #ff6b6b;
+            transform: translateX(5px);
+        }
+        
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-5px) scale(1.2);
+        }
+        
+        .newsletter-input {
+            transition: all 0.3s ease;
+        }
+        
+        .newsletter-input:focus {
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.5);
+        }
+        
+        .footer-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+        }
+    </style>
+</head>
+<body>
+    <!-- Main content placeholder -->
+    <div class="flex-grow p-8 text-center">
+        <h1 class="text-4xl font-bold mb-4">Website Content</h1>
+        <p class="text-xl opacity-80">This would be your main website content</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer-gradient w-full py-12 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="flex flex-col">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <span class="bg-white text-purple-700 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-rocket"></i>
+                        </span>
+                        Ecstatic
+                    </h3>
+                    <p class="text-white/80 mb-6 leading-relaxed">
+                        We create digital experiences that inspire and delight. Our mission is to help businesses grow through innovative solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="flex flex-col">
+                    <h3 class="text-xl font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i> About Us</a></li>
+                        <li><a href="#" class="footer-link flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i> Services</a></li>
+                        <li><a href="#" class="footer-link flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i> Portfolio</a></li>
+                        <li><a href="#" class="footer-link flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i> Testimonials</a></li>
+                        <li><a href="#" class="footer-link flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="flex flex-col">
+                    <h3 class="text-xl font-semibold mb-6">Our Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i> Web Development</a></li>
+                        <li><a href="#" class="footer-link flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i> Mobile Apps</a></li>
+                        <li><a href="#" class="footer-link flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i> UI/UX Design</a></li>
+                        <li><a href="#" class="footer-link flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i> Digital Marketing</a></li>
+                        <li><a href="#" class="footer-link flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i> Cloud Solutions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="flex flex-col">
+                    <h3 class="text-xl font-semibold mb-6">Newsletter</h3>
+                    <p class="text-white/80 mb-4">Subscribe to our newsletter for updates</p>
+                    <form class="flex flex-col space-y-4">
+                        <input 
+                            type="email" 
+                            placeholder="Your email address" 
+                            class="newsletter-input bg-white/10 border border-white/20 rounded-lg py-3 px-4 focus:outline-none focus:border-white/40"
+                        >
+                        <button 
+                            type="submit" 
+                            class="bg-white text-purple-700 font-semibold py-3 rounded-lg transition-all hover:bg-gray-100 hover:shadow-lg"
+                        >
+                            Subscribe Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="footer-divider my-8"></div>
+
+            <!-- Bottom Footer -->
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <p class="text-white/70 text-sm">© 2023 Ecstatic. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-white/70 hover:text-white text-sm footer-link">Privacy Policy</a>
+                    <a href="#" class="text-white/70 hover:text-white text-sm footer-link">Terms of Service</a>
+                    <a href="#" class="text-white/70 hover:text-white text-sm footer-link">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for the footer elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const footerLinks = document.querySelectorAll('.footer-link');
+            
+            footerLinks.forEach(link => {
+                link.addEventListener('mouseenter', () => {
+                    link.style.transform = 'translateX(5px)';
+                    link.style.color = '#ff6b6b';
+                });
+                
+                link.addEventListener('mouseleave', () => {
+                    link.style.transform = 'translateX(0)';
+                    link.style.color = '';
+                });
+            });
+            
+            const socialIcons = document.querySelectorAll('.social-icon');
+            
+            socialIcons.forEach(icon => {
+                icon.addEventListener('mouseenter', () => {
+                    icon.style.transform = 'translateY(-5px) scale(1.2)';
+                });
+                
+                icon.addEventListener('mouseleave', () => {
+                    icon.style.transform = '';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
