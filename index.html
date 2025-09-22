@@ -9,9 +9,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="css/index.css" />
+    <!-- In <head> -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <title>Document</title>
   </head>
-  <body>
+
+  <body class="max-w-[1500px] mx-auto">
     <nav class="p-4 relative fadeindown">
       <div class="container mx-auto flex justify-between items-center">
         <!-- Logo Section -->
@@ -21,21 +28,21 @@
 
         <!-- Desktop Menu Links -->
         <div class="hidden lg:flex space-x-6 text-black">
-          <a href="/index.php" class="font-semibold hover:text-white">Home</a>
-          <a href="/about.php" class="font-semibold hover:text-white"
+          <a href="/index.php" class="font-semibold hover:border-b  hover:text-blue-600">Home</a>
+          <a href="/about.php" class="font-semibold hover:border-b  hover:text-blue-600"
             >Company</a
           >
-          <a href="/course.php" class="font-semibold hover:text-white">Team</a>
-          <a href="/contact.php" class="font-semibold hover:text-white"
+          <a href="/course.php" class="font-semibold hover:border-b  hover:text-blue-600">Team</a>
+          <a href="/contact.php" class="font-semibold hover:border-b  hover:text-blue-600"
             >Case Studies</a
           >
-          <a href="/contact.php" class="font-semibold hover:text-white"
+          <a href="/contact.php" class="font-semibold hover:border-b  hover:text-blue-600"
             >Services</a
           >
-          <a href="/contact.php" class="font-semibold hover:text-white"
+          <a href="/contact.php" class="font-semibold hover:border-b  hover:text-blue-600"
             >Blogs</a
           >
-          <a href="/contact.php" class="font-semibold hover:text-white"
+          <a href="/contact.php" class="font-semibold hover:border-b  hover:text-blue-600"
             >Career</a
           >
         </div>
@@ -44,7 +51,7 @@
           <a
             href="#"
             class="bg-blue-500 rounded-3xl px-6 py-2 text-white font-semibold max-lg:hidden"
-            >Let' Talk</a
+            >Let'S Talk</a
           >
         </div>
 
@@ -140,54 +147,80 @@
 
     <!-- Home page card -->
 
-    <div class="flex justify-center py-4 px-5 lg:px-20">
-      <div class="bg-div rounded-3xl flex justify-center items-center">
+    <div
+      class="flex justify-center py-4 px-5 lg:px-20"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div
+        class="bg-div rounded-3xl flex justify-center items-center w-full max-w-[1140px] mx-auto"
+      >
         <div
-          class="bg-dot-div flex flex-col justify-center items-center rounded-3xl"
+          class="bg-dot-div flex flex-col justify-center items-center rounded-3xl w-full"
         >
           <div
             class="flex flex-col justify-center items-center text-center px-4 pt-10 md:pt-18"
           >
-            <!-- First text with fade-in and slide-up animation -->
+            <!-- First text -->
+            <!-- First text -->
             <p
-              class="text-lg md:text-2xl lg:text-6xl font-semibold text-white opacity-0 animate-fade-in-up animation-delay-100"
+              class="text-lg md:text-2xl lg:text-6xl font-semibold text-white"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="100"
             >
               Unleash Next-Level Growth
             </p>
 
-            <!-- Second text with fade-in and slide-up animation with longer delay -->
+            <!-- Second text -->
             <p
-              class="text-xl md:text-4xl lg:text-7xl font-semibold text-white md:pt-4 opacity-0 animate-fade-in-up animation-delay-300"
+              class="text-xl md:text-4xl lg:text-7xl font-semibold text-white md:pt-4"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="300"
             >
               Effortless, Insightful, Yours.
             </p>
 
-            <!-- Subtitle with fade-in animation with even longer delay -->
+            <!-- Subtitle -->
             <p
-              class="text-xs md:text-xl text-white pt-2 md:pt-5 opacity-90 opacity-0 animate-fade-in animation-delay-500"
+              class="text-xs md:text-xl text-white pt-2 md:pt-5"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="500"
             >
               Reach your goals with tools that accelerate progress
             </p>
           </div>
 
-          <div class="relative">
-            <div>
-              <div class="flex items-center justify-center">
-                <div class="text-white">
-                  <img src="image/left_wing.png" class="h-1/2" alt="" />
-                </div>
-                <div class="text-whitel">
-                  <img src="image/right_wing.png" class="h-1/2" alt="" />
-                </div>
-              </div>
-            </div>
+          <div class="relative w-full h-full flex justify-center items-center">
+            <!-- Left Wing -->
+            <img
+              src="image/left_wing.webp"
+              alt="Left Wing"
+              class="w-1/2 h-full object-cover"
+              data-aos="fade-right"
+              data-aos-duration="800"
+            />
 
+            <!-- Right Wing -->
+            <img
+              src="image/right_wing.webp"
+              class="w-1/2 h-full object-cover"
+              alt="Right Wing"
+              data-aos="fade-left"
+              data-aos-duration="800"
+            />
+
+            <!-- Center Button -->
             <div
-              class="your-div absolute inset-0 flex items-center justify-center"
+              class="absolute md:pt-22 lg:pt-26 xl:pt-35 flex justify-center w-full your-div"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+              data-aos-delay="500"
             >
-              <!-- Button with pulse animation on hover -->
               <button
-                class="z-20 w-ful md:px-8 px-4 lg:px-16 py-0.5 md:py-2 bg-white rounded-3xl text-xs md:text-lg font-semibold hover:animate-pulse"
+                class="bg-white rounded-3xl md:py-1 px-2 md:px-4 lg:px-8 font-semibold text-xs md:text-md lg:text-lg"
               >
                 Let's Talk
               </button>
@@ -200,48 +233,55 @@
     <div
       class="flex flex-col pb-10 md:pt-5 justify-center items-center max-md:px-2"
     >
-      <p class="font-bold text-center text-md md:text-xl text-gray-600">
+      <p
+        class="font-bold text-center text-md md:text-3xl text-gray-600 pb-7"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="100"
+      >
         Trusted By More Than
         <span class="text-blue-600">+10,000</span>
         Clients
       </p>
+
       <div
-        class="flex flex-wrap gap-4 md:gap-10 justify-center items-center lg:px-20"
+        class="flex flex-wrap gap-4 md:gap-16 justify-center items-center lg:px-20"
       >
         <img
           src="image/company_logos/network.png"
           class="w-24 h-10 md:w-40 md:h-16"
-          alt=""
+          data-aos="fade-right"
+          data-aos-delay="100"
         />
         <img
           src="image/company_logos/penta.png"
           class="w-24 h-10 md:w-40 md:h-16"
-          alt=""
+          data-aos="fade-right"
+          data-aos-delay="300"
         />
         <img
           src="image/company_logos/product.png"
           class="w-24 h-10 md:w-40 md:h-16"
-          alt=""
+          data-aos="fade-right"
+          data-aos-delay="500"
         />
         <img
           src="image/company_logos/sitemark.png"
           class="w-24 h-10 md:w-40 md:h-16"
-          alt=""
+          data-aos="fade-right"
+          data-aos-delay="700"
         />
         <img
           src="image/company_logos/vision.png"
           class="w-24 h-10 md:w-40 md:h-16"
-          alt=""
+          data-aos="fade-right"
+          data-aos-delay="900"
         />
         <img
           src="image/company_logos/waveless.png"
           class="w-24 h-10 md:w-40 md:h-16"
-          alt=""
-        />
-        <img
-          src="image/company_logos/network.png"
-          class="w-24 h-10 md:w-40 md:h-16"
-          alt=""
+          data-aos="fade-right"
+          data-aos-delay="1100"
         />
       </div>
     </div>
@@ -406,9 +446,9 @@
           <!-- Company Info -->
           <div class="flex flex-col">
             <h3 class="text-2xl font-bold mb-6 flex items-center">
-             <img src="image/image.png" alt="">
+              <img src="image/image.png" alt="" />
             </h3>
-            <p class=" mb-6 leading-relaxed">
+            <p class="mb-6 leading-relaxed">
               We create digital experiences that inspire and delight. Our
               mission is to help businesses grow through innovative solutions.
             </p>
@@ -514,9 +554,7 @@
           <!-- Newsletter -->
           <div class="flex flex-col">
             <h3 class="text-xl font-semibold mb-6">Newsletter</h3>
-            <p class=" mb-4">
-              Subscribe to our newsletter for updates
-            </p>
+            <p class="mb-4">Subscribe to our newsletter for updates</p>
             <form class="flex flex-col space-y-4">
               <input
                 type="email"
@@ -540,23 +578,15 @@
         <div
           class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
         >
-          <p class="text-sm">
-            © 2023 Ecstatic. All rights reserved.
-          </p>
+          <p class="text-sm">© 2023 Ecstatic. All rights reserved.</p>
           <div class="flex space-x-6">
-            <a
-              href="#"
-              class="hover:text-white text-sm footer-link"
+            <a href="#" class="hover:text-white text-sm footer-link"
               >Privacy Policy</a
             >
-            <a
-              href="#"
-              class="hover:text-white text-sm footer-link"
+            <a href="#" class="hover:text-white text-sm footer-link"
               >Terms of Service</a
             >
-            <a
-              href="#"
-              class="hover:text-white text-sm footer-link"
+            <a href="#" class="hover:text-white text-sm footer-link"
               >Cookie Policy</a
             >
           </div>

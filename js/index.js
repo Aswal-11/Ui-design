@@ -282,3 +282,9 @@ function generateServiceCards() {
 
 // Generate the service cards when the page loads
 document.addEventListener("DOMContentLoaded", generateServiceCards);
+
+
+AOS.init({
+    duration: 800, // animation duration
+    once: true     // animation only happens once
+  });
